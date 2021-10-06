@@ -1,0 +1,375 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.max-width{
+    width: 1200px;
+    margin: auto;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+img{
+    max-width: 100%;
+}
+body,h1,h2,h3,h4,h5,p,a,span{
+    font-family: 'Work Sans', sans-serif;
+}
+/* .......Headder section.... */
+.header{
+    background: #000;
+    padding: 10px;
+}
+.header-left {
+    float: left;
+    width: 30%;
+}
+.header-left img{
+    width: 85px;
+}
+.header-right{
+    float: right;
+    width: 70%;
+}
+.header-right ul{
+    text-align: right;
+}
+.header-right ul li{
+    display: inline-block;
+    margin-bottom: 0;
+    position: relative;
+}
+.header-right ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 30px;
+    font-size: 26px;
+    line-height: 57px;
+}
+.header-right ul li a::after{
+    content: "";
+    position: absolute;
+    left: 32px;
+    bottom: 14px;
+    background-color: #fff;
+    height: 3px;
+    width: 0;
+    transition: .5s;
+}
+.header-right ul li a:hover::after{
+    width: 56%;
+}
+/* .....Dropdown...... */
+.header-right ul li ul{
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 200px;
+    background: black;
+    text-align: left;
+    border-top: 2px solid #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.header-right ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+.header-right ul li ul li:hover a{
+    color: #000;
+    background: #fff;
+}
+.header-right ul li ul li{
+    display: block;
+}
+.header-right ul li ul li a::after{
+    content: "";
+    position: absolute;
+    left: 32px;
+    bottom: 14px;
+    background-color:black;
+    height: 3px;
+    width: 0;
+    transition: .5s;
+}
+.header-right ul li ul li a:hover::after{
+    width: 40%;
+}
+/* .....Banner Section.....  */
+.banner{
+    background: url(./a0c6042d4612d7adf44692fffac7e082.jpg) center top no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+}
+.banner h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.banner h3{
+    font-weight: 700;
+    font-size: 27px;
+    margin-bottom: 3rem;
+}
+.banner .one{
+    text-decoration: none;
+    color: #fff;
+    background: black;
+    padding: 19px 45px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .5s;
+    margin-right: 8px;
+    border: 1px solid #000;
+}
+.banner .one:hover{
+    color: #000;
+    background: #fff;
+}
+.banner .two{
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    padding: 19px 45px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .5s;
+    margin-left: 8px;
+}
+.banner .two:hover{
+    color:#fff;
+    background: black;
+}
+/* .........about-Section......... */
+.about{
+    background-color: #87a371;
+    padding: 45px;
+}
+.hpo{
+    text-align: center;
+}
+.about .hpo h1{
+    float: none;
+    display: inline-block;
+    margin-bottom: 45px;
+    font-size: 60px;
+    font-weight: 700;
+    border-bottom: 4px solid #ddd;
+    color: #e2e3d1;
+    text-shadow: 1px 1px 5px #fff;
+}
+.about-left{
+    float: left;
+    width: 50%;
+    line-height: 25px;
+    margin-top: 75px;
+    color: #ffffff; 
+}
+.about-right{
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+.about-right img{
+    width: 350px;
+}
+/* ........Slider- section........... */
+.slider{
+    background: #606a64;
+    padding: 50px;
+    margin: auto;
+}
+.slider .box{
+    float: none;
+    text-align: center;
+}
+.box h1{
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 700;
+    border-bottom: 4px solid #ddd;
+    color: #dfdbd8;
+    text-shadow: 1px 1px 5px #fff;
+}
+.box h2{color: #dfdbd8;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: 10px;}
+.box p{
+    color: #dfdbd8;
+    font-size: 20px;
+    line-height: 25px;
+}
+.slider-div{
+    margin-top: 60px;
+}
+.dip-tip {
+    width: 25%;
+    float: left;
+    background: #fff;
+    height: 250px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 0 58px;
+}
+.dip-tip h3{
+    font-size: 29px;
+    font-weight: 600;
+    margin-bottom: 17px
+}
+.dip-tip p{
+ line-height: 30px;
+}
+.pic{
+    height: 200px;
+    float: left;
+    margin-right: 15px;
+}
+/* ..........Container Section............. */
+.container{
+    background: #87a371;
+    padding: 100px;
+}
+.container-head{
+    text-align: center;
+    color: #fff;
+    float: none;
+}
+.container-head h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.container-head h5{
+    font-size: 25px;
+    color: #e2e3d1;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.container img{
+    height: auto;
+    width: 583px;
+}
+.container-left{
+    float: left;
+    width: 45%;
+    border: 2px solid #ddd;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.container-right{
+    float: right;
+    width: 45%;
+    text-align: center;
+    border: 2px solid #ddd;
+    margin-bottom: 50px;
+}
+.container b{
+    margin-top: 18px;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #506a85;
+}
+.container p{
+    color: #fff;
+    margin-bottom: 18px;
+}
+/* ............................... */
+
+.picturs{
+    float: left;
+    width: 20%;
+    margin: 0px;
+    margin-left: 49px;
+}
+.picturs img{
+    width: 277px;
+    margin: 9px;
+}
+/* .......Fotter Section.......... */
+.fotter{
+    background: #5b9776;
+    padding: 50px 0;
+}
+.fotter-head{
+    float: none;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.fotter-head h2{
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    display: inline-block;
+    font-size: 38px;
+}
+.fotter .membor{
+    text-align: cente;
+    float: left;
+    width: 33%;
+    color: #fff;
+}
+.fotter .membor img{
+    width: 323px;
+    display: block;
+    margin-bottom: 12px;
+}
+.fotter .membor i{
+    font-size: 29px;
+    margin-right: 19px;
+}
+..fotter .membor i:hover{
+    color: darkgray;
+    background: darkorange;
+}
+.membor :nth-child(2){
+    margin-left: 100px;
+}
+/* ........Bottom Section......... */
+.bottom{
+    background: #606a64;
+    padding: 125px 0;
+    text-align: center;
+    color: #e4e6e8;
+}
+.bottom h1{
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+.bottom h5{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 31px;
+    margin-bottom: 20px;
+}
+.bottom a{
+    display: inline-block;
+    text-decoration: unset;
+    background: #00bc9c;
+    padding: 15px 40px;
+    color: #fff;
+    border-radius: 10px;
+}
+.bottom a:hover{
+    background: darkslateblue;
+    color: #fff;
+    transition: .5s;
+}
+/* ......fotter bottom section......... */
+.fotter-bottom{
+    background: #000;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+}
+.fotter-bottom p{
+    font-size: 20px;
+}
